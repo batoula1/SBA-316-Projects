@@ -12,14 +12,14 @@
     <!-- Add the <nav> element below -->
     <nav id="sub-menu"></nav>
 
-    <div class="header">
-        <h2>Blog Name</h2>
+    <div class="header" id="backtest">
+        <h2>Wanderers of the Wild: A Wolf's Tale</h2>
       </div>
       
       <div class="row">
         <div class="leftcolumn">
           <div class="card">
-            <h2>Wolf Canid family</h2>
+            <h2>Exploring the Enigmatic Canids: A Fascinating Journey into the World of Wolves.</h2>
             <div class="content">
                 <h1>Wolf Species and Facts</h1>
                 <p>Wolf, any of two species of wild doglike carnivores. The gray, or timber, wolf (Canis lupus) is the better known. It is the largest nondomestic member of the dog family (Canidae) and inhabits vast areas of the Northern Hemisphere. 
@@ -51,7 +51,7 @@
       <div class="footer">
         <h2><a href="https://nywolf.org/donate/?gad_source=1">Wolf Conservation Center</a></h2>
       </div>
-
+    <h2 class="greeting"></h2>
     <!-- Container for entire form. -->
     <div class="form-container">
       <!-- Registration Side -->
@@ -84,7 +84,7 @@
             <label for="terms"
               >I agree to the&nbsp;<a href="#">Terms of Use</a>.</label
             >
-            <input type="submit" value="Register" />
+            <input type="submit" value="Register" class="subbtn" />
           </div>
         </form>
       </div>
@@ -95,7 +95,7 @@
         <p>Login using your account information.</p>
 
         <!-- Login Form -->
-        <form id="login" style="border-bottom: 1px solid lightgray;">
+        <form id="login" style="border-bottom: 1px solid rgb(235, 222, 163);">
           <input name="username" type="text" placeholder="Username" />
           <span class="input-icon"><i class="fa-solid fa-user"></i></span><br />
 
@@ -122,8 +122,29 @@
 </header>
 <main></main>
 
+<!-- Button to open the modal login form -->
 
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      
+    </div>
+
+ 
+
+    
+  </form>
+</div>
+<p id="quickText">
+
+</p>
     </div>
 </body>
 <script src="app.js"></script>
 </html>
+

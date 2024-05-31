@@ -13,7 +13,7 @@ const footer = document.querySelector(".footer")
 
 console.log(footer)
 
-let heading2 = footer.firstElementChild.innerHTML +" Please visit our webiste"
+let heading2 = footer.firstElementChild.innerHTML +" Embark on a journey of discovery and wonder as you explore our website"
 footer.innerHTML = heading2
 
 console.log(heading2)

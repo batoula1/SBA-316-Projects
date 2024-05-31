@@ -1,3 +1,6 @@
+let some = window.prompt('Please enter your name:');
+alert('Welcome' + " " + some)
+
 const username = document.getElementById('username');
 console.log(username);
 
@@ -5,6 +8,15 @@ console.log(username);
 const user = document.querySelector(".greeting")
 
 const regbtn = document.querySelector('.subbtn')
+
+const footer = document.querySelector(".footer")
+
+console.log(footer)
+
+let heading2 = footer.firstElementChild.innerHTML +" Please visit our webiste"
+footer.innerHTML = heading2
+
+console.log(heading2)
 
 
 regbtn.addEventListener("click", (e)=>{
@@ -28,7 +40,7 @@ const message = document.getElementById('quickText');
 const alertTwo = document.createDocumentFragment();
 
 let mess = document.createElement('p');
-mess.textContent = 'Visit our sanctuary, Wanderers of the Wild';
+mess.textContent = 'Visiting a wolf sanctuary is a soul-stirring experience, where every step echoes with the ancient tales of the wild.';
  
 alertTwo.appendChild(mess);
 message.appendChild(alertTwo);

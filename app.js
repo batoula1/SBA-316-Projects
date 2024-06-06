@@ -1,8 +1,8 @@
 let some = window.prompt('Please enter your name:');
-alert('Welcome' + " " + some)
+window.alert('Welcome' + " " + some)
 
 const username = document.getElementById('username');
-console.log(username);
+
 
 
 const user = document.querySelector(".greeting")
@@ -11,22 +11,22 @@ const regbtn = document.querySelector('.subbtn')
 
 const footer = document.querySelector(".footer")
 
-console.log(footer)
+
 
 let heading2 = footer.firstElementChild.innerHTML +" Embark on a journey of discovery and wonder as you explore our website"
 footer.innerHTML = heading2
 
-console.log(heading2)
+
 
 
 regbtn.addEventListener("click", (e)=>{
     e.preventDefault()
 user.innerHTML = username.value
-    alert(`Finished Registering ${username.value}`)
+    window.alert(`Finished Registering ${username.value}`)
 })
 
 const email = document.querySelector('#email');
-console.log(email);
+
 
 
 

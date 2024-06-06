@@ -16,8 +16,18 @@ const footer = document.querySelector(".footer")
 let heading2 = footer.firstElementChild.innerHTML +" Embark on a journey of discovery and wonder as you explore our website"
 footer.innerHTML = heading2
 
+const navarray = ["Home", "About", "Resources"]
 
+const navDiv = document.querySelector(".navBar");
 
+for(let i = 0; i < navarray.length; i++) {
+    console.log(navarray[i])
+    const navLink = document.createElement("a")
+    navLink.href = '/'
+    navLink.text = navarray[i]
+    navDiv.append(navLink)
+}
+console.log(navDiv)
 
 regbtn.addEventListener("click", (e)=>{
     e.preventDefault()
@@ -31,6 +41,7 @@ const email = document.querySelector('#email');
 
 
 const h2 = document.querySelectorAll('input');
+
 h2.forEach(h2 => {
     h2.style.fontSize = '1em';
     h2.style.color = 'blue';
